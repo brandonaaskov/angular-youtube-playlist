@@ -1,0 +1,19 @@
+{
+  "name": "angular-youtube-playlist",
+  "version": "0.1.0",
+  "authors": [
+    "Brandon Aaskov <baaskov@fullscreen.net>"
+  ],
+  "description": "Displays a youtube playlist as a grid of stills and basic metadata information.",
+  "main": "build/angular-youtube-playlist.min.js",
+  "keywords": [
+    "angular",
+    "youtube",
+    "playlist"
+  ],
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "angular": "*"
+  }
+}

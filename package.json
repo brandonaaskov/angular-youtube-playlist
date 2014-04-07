@@ -1,0 +1,18 @@
+{
+  "name": "angular-youtube-playlist",
+  "version": "0.1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-plumber": "*",
+    "gulp-coffee": "*",
+    "gulp": "*",
+    "gulp-uglify": "^0.2.1",
+    "gulp-concat": "^2.2.0",
+    "connect": "~2.14.3",
+    "coffee-script": "1.x.x",
+    "lodash": "~2.4.1"
+  },
+  "scripts": {
+    "test": "karma start karma.js"
+  }
+}
