@@ -5,4 +5,4 @@ angular.module('fs.video-playlist').directive 'videoThumbnail', ($compile) ->
   link: (scope, element) ->
     # todo: support play icon overlay (resizable... font awesome?)
     console.log 'video-thumbnail element', element
-    
+
