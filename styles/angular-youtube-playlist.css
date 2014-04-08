@@ -12,7 +12,7 @@
 }
 .fs-video-playlist .fs-video .video-thumbnail-container .overlay:hover {
   background-color: rgba(0, 0, 0, 0.6);
-  color: #4c98dc;
+  color: rgba(0, 0, 0, 0.4);
 }
 .fs-video-playlist .fs-video .video-thumbnail-container .overlay .fa-play-circle-o {
   font-size: 160px;
