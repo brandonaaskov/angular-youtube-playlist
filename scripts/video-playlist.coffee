@@ -9,7 +9,9 @@ angular.module('fs.video-playlist').directive 'videoPlaylist', ($compile) ->
         <li class="fs-video" ng-repeat="video in videoPlaylist track by video.id">
           <h3>{{video.title}}</h3>
           <h5>{{video.youtube_id}}</h5>
-          <video-thumbnail promote-video video="video"></video-thumbnail>
+          <video-thumbnail promote-video video="video">
+            <img src="{{video.thumbnail_url}}">
+          </video-thumbnail>
         </li>
       </ol>
     '''

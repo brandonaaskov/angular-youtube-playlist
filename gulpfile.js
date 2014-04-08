@@ -4,8 +4,7 @@ var pkg = require('./package.json'),
     coffee = require('gulp-coffee'),
     plumber = require('gulp-plumber'),
     concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
-    watch = require('gulp-watch');
+    uglify = require('gulp-uglify');
 
 // non-gulp stuff i need
 var http = require('http'),

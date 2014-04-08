@@ -17,6 +17,7 @@
     "angular": "*"
   },
   "dependencies": {
-    "font-awesome": "~4.0.3"
+    "font-awesome": "~4.0.3",
+    "angular-ui": "~0.4.0"
   }
 }

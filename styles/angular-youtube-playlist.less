@@ -1,5 +1,5 @@
-@defaultWidth: 280px * 2;
-@defaultHeight: 160px * 2;
+@defaultWidth: 320px;
+@defaultHeight: 160px;
 @fontSize: @defaultHeight/2;
 
 .fs-video-playlist {
@@ -15,6 +15,7 @@
         width: 100%;
         height: 100%;
         text-align: center;
+        cursor: pointer;
 
         &:hover {
           background-color: rgba(0, 0, 0, .6);
@@ -25,6 +26,16 @@
           font-size: @fontSize;
           position: relative;
           top: @fontSize/2;
+        }
+
+        .promote {
+          color: white;
+          position: absolute;
+          bottom: 0px;
+          right: 0px;
+          padding: 3px;
+          background-color: #f5aa37;
+          cursor: pointer;
         }
       }
 
