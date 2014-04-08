@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <title>angular-youtube-playlist</title>
 
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-  <style>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-  </style>
-
+  <link href="styles/angular-youtube-playlist.css" rel="stylesheet">
   <script src="bower_components/angular/angular.js"></script>
-  <script src="build/angular-youtube-playlist.js"></script>
+  <!--<script src="build/angular-youtube-playlist.js"></script>-->
+  <script src="scripts/_loader.js"></script>
+  <script src="scripts/video-playlist.js"></script>
+  <script src="scripts/video-thumbnail.js"></script>
+  <script src="scripts/promote-video.js"></script>
 
   <script>
     angular.module('demo', ['fs.video-playlist']);
@@ -18,13 +21,28 @@
     // everything else in this script block is for this example page,
     // so just ignore it unless you're very curious
     angular.module('demo').controller('demoController', function ($scope) {
-
+      $scope.videoPlaylist = [
+        {
+          id: 1,
+          user_id: 2,
+          youtube_id: "x0f0_DF6pow",
+          thumbnail_url: "http://i1.ytimg.com/vi/x0f0_DF6pow/hqdefault.jpg",
+          title: "DJO Hedgehog 1"
+        },
+        {
+          id: 2,
+          user_id: 2,
+          youtube_id: "LYPa1eUKnf4",
+          thumbnail_url: "http://i1.ytimg.com/vi/LYPa1eUKnf4/hqdefault.jpg",
+          title: "DJO Hedgehog 2"
+        }
+      ]
     });
   </script>
 </head>
 <body ng-app="demo">
   <div class="container" ng-controller="demoController">
-    <video-playlist></video-playlist>
+    <video-playlist playlist="videoPlaylist"></video-playlist>
   </div>
 </body>
 </html>

@@ -14,8 +14,8 @@ var http = require('http'),
 var serverPort = 3000;
 
 var paths = {
-  source: ['src/**/*.coffee'],
-  compiled: ['src/**/*.js'],
+  source: ['scripts/**/*.coffee'],
+  compiled: ['scripts/**/*.js'],
   tests: ['tests/**/*.coffee']
 };
 
@@ -24,7 +24,7 @@ gulp.task('compile', function () {
   return gulp.src(paths.source)
     .pipe(plumber())
     .pipe(coffee({bare: true}))
-    .pipe(gulp.dest('src'));
+    .pipe(gulp.dest('scripts'));
 });
 
 //compresses using uglify

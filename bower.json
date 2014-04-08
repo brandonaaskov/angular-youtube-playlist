@@ -15,5 +15,8 @@
   "private": true,
   "devDependencies": {
     "angular": "*"
+  },
+  "dependencies": {
+    "font-awesome": "~4.0.3"
   }
 }
